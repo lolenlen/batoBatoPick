@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title> DOM Projects
+  </title>
+  <link rel="stylesheet" href="12-setInterval-batoBatoPick.css">
+
+</head>
+
+
+
+<body>
+
+  <div class="batoBatoPick">
+
+    <p class="bbpTitle">Bato-bato PICK!</p>
+
+    <button class="bButton js-bButton"><img class="bImage" src="batoBatoPickPics/BATO-emoji.png"></button>
+
+    <button class="pButton js-pButton"><img class="pImage" src="batoBatoPickPics/PAPEL-emoji.png"></button>
+
+    <button class="gButton js-gButton"><img class="gImage" src="batoBatoPickPics/GUNTING-emoji.png"></button>
+
+<p class="js-result result">Pumili ng pato</p>
+
+<p class="js-move"> </p>
+
+<p class="js-score"></p>
+
+    <button class="iskurB" 
+    onclick="
+      score.wins = 0;
+      score.loses =  0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      
+
+      updateScoreElement();
+    ">
+      Ulit Iskur
+    </button>  
+
+    <button class="autoPlayB"
+            onclick="
+            autoPlay();
+            ">
+      Auto-play
+    </button>
+
+    
+
+  </div>
+
+  <div>
+    <p style="font-style: italic;"> a = bato, s = papel, d = gunting, r = ulit iskur, t = auto-play</p>
+  </div>
+
+
+  <script src="12-setInterval-batoBatoPick.js" ></script>
+</body>
+
+</html> 

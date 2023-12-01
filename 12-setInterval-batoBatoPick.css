@@ -1,0 +1,42 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bButton, .pButton, .gButton {
+  margin: 0px 10px;
+  border-radius: 150px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.bImage, .pImage, .gImage {
+  width: 50px;
+}
+
+.move-icon {
+  width: 25px;
+}
+
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.js-move, .js-score {
+  margin-left: 25px;  
+}
+
+.iskurB, .autoPlayB {
+  font-size: 14px;
+  border: 0px;
+  padding: 10px 15px;
+  margin-left: 20px;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
